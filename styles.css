@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    text-align: center;
+    color: #3f51b5;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.tree {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tree ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.tree ul ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #ddd;
+    position: relative;
+}
+
+.tree ul ul:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ddd;
+}
+
+.tree li {
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.tree li:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.02);
+}
+
+.tree li i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.details {
+    display: none;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #fefefe;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+ul ul ul {
+    margin-left: 20px;
+    border-left: 2px dashed #ccc;
+}
+
+ul ul ul ul {
+    margin-left: 20px;
+    border-left: 2px dotted #bbb;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
