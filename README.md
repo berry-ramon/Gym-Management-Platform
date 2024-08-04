@@ -32,10 +32,24 @@ The Gym Management Platform is a comprehensive web application designed to strea
 - Foster collaboration and effective task management among junior developers.
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/username/gym-management-platform.git`
-2. Navigate to the project directory: `cd gym-management-platform`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
+1## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/berry-ramon/gym-management-platform.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd gym-management-platform
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm run dev
+    ```
 
 ## Contributing
 We welcome contributions from developers of all skill levels. To contribute:
